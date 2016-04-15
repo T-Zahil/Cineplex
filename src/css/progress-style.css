@@ -1,0 +1,99 @@
+
+body,div
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+
+
+.chat-infos .info
+{
+	background: #2c2c2c;
+	width: 100%;
+	height:20%;
+}
+.chat-infos .progressBar
+{
+	width: 100%;
+	height:45%;
+	margin: auto;
+}
+
+.hype
+{	
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+	width: 100%;
+	background: #fe816a;
+	background-size: 30% ;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	transition:.3s all;
+	text-align:center;
+	padding: .7rem 0rem;
+}
+.hype img{	
+	width:8rem;
+}
+.hype:hover{
+	cursor:pointer;
+	background: #FFA797;
+}
+.hype:active{
+	background: #fe816a;
+}
+
+
+.cursor
+{
+	width : 0px;
+	height: 4px;
+	background: #f5a623;
+	
+}
+.timeline .results
+{
+	height: 50px;
+	width:100%;
+	margin: auto;
+}
+
+.reactions
+{
+	width: 95px;
+	margin: auto;
+}
+
+
+.hypeBar
+{
+	
+	background: #f5a623;
+	position: absolute;
+	min-width: 1px;
+	
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+.hype{
+    height: auto;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+.hype img{
+	width:15rem;
+}
+}
+
+
+
+
+
+
+
+

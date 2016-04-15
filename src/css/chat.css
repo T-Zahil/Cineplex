@@ -1,0 +1,533 @@
+body {
+	margin: 0;
+	font-family: "Abrade",Arial,sans-serif;
+	background-color: #fff;
+}
+  
+
+/*** LOADER STYLE ***/
+.loader{
+position:absolute;
+z-index:9;
+width:100vw;
+height:100vh;
+background-color:white;
+}
+.loader .logo {
+  width: 20rem;
+  margin: auto;
+  margin-top: 20vw;
+  border-bottom: none;
+}
+
+.loader .container {
+  font-weight: 200;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.loader .container h1 {
+  margin-top:.25rem;
+  padding-left: .5rem;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.loader .dots {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.loader .dots .dot {
+  display: inline-block;
+  width: .5rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.1;
+}
+
+.loader .dots .dot:nth-child(1) {
+  -webkit-animation: animationDot 1s linear 0.3s alternate running infinite forwards;
+          animation: animationDot 1s linear 0.3s alternate running infinite forwards;
+}
+
+.loader .dots .dot:nth-child(2) {
+  -webkit-animation: animationDot 1s linear 0.6s alternate running infinite forwards;
+          animation: animationDot 1s linear 0.6s alternate running infinite forwards;
+}
+
+.loader .dots .dot:nth-child(3) {
+  -webkit-animation: animationDot 1s linear 0.9s alternate running infinite forwards;
+          animation: animationDot 1s linear 0.9s alternate running infinite forwards;
+}
+
+.loader .dots .dot:nth-child(4) {
+  -webkit-animation: animationDot 1s linear 1.2s alternate running infinite forwards;
+          animation: animationDot 1s linear 1.2s alternate running infinite forwards;
+}
+
+.loader .dots .dot:nth-child(5) {
+  -webkit-animation: animationDot 1s linear 1.5s alternate running infinite forwards;
+          animation: animationDot 1s linear 1.5s alternate running infinite forwards;
+}
+
+.loader .dots .dot:nth-child(6) {
+  -webkit-animation: animationDot 1s linear 1.8s alternate running infinite forwards;
+          animation: animationDot 1s linear 1.8s alternate running infinite forwards;
+}
+
+@-webkit-keyframes animationDot {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationDot {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*** LOADER STYLE ***/
+
+.main{
+	width:100%;
+}
+.clear{
+	clear:both;
+}
+
+tr
+{
+	border: 30px solid #fff;
+}
+
+td.info_message{
+height: 30px;
+}
+.info_message
+{
+	overflow:hidden;
+	font-size:x-small;
+	background-color: #F5A623;
+	color: #fff;
+	text-align:center;
+	height: 1px;
+	width: 5rem;
+}
+.message2 .timing{
+	color: #bbbbbb;
+}
+.message
+{
+	width:80%;
+	x-overflow:hidden;
+	y-overflow:visible;
+	text-align:left;
+	padding:1%;
+}
+.message2
+{
+	width:100%;
+	overflow:hidden;
+	word-break: break-all;
+}
+
+
+
+.msg input#message{
+	outline:none;
+	width:81%;
+	height:35%;
+	padding:2%;
+	margin: auto;
+}
+
+
+.left-part {
+    float: left;
+    width: 75%;
+    border-right: 1px #cbcbcb solid;
+    display: block;
+}
+
+.right-part {
+	background: white;
+    overflow: hidden;
+    width: 24%;
+	height: 99vh;
+    float: right;
+    transform: translateX(-.4rem);
+}
+
+
+/* 
+ * ------------------------------------
+ *            CHAT INFOS
+ * ------------------------------------
+ * 
+ */
+
+.chat-infos {
+	display: block;
+	background: #2c2c2c;
+	width:100%;
+	height: 9.5vh;
+}
+
+.room-infos {
+	display: inline-block;
+	padding-left: 3vw;
+	width: 73vw;
+}
+.room-infos p {
+	display:inline-block;
+}
+
+.room-infos .room-num {
+	font-size:12px;
+	color: #a1a1a1;
+}
+
+.room-infos .room-movie {
+	font-size:14px;
+	color: white;
+	text-transform:uppercase;
+}
+
+.room-infos .movie-state {
+	float: right;
+	color: #a1a1a1;
+	font-size:11px;
+	padding-right: 3vw;
+	line-height: 3vh;
+	font-style: italic;
+}
+
+.users-infos {
+	text-align: center;
+	color: #8b8b8b;
+	line-height: 0;
+	margin-top: -3vh;
+}
+
+.users-infos p {
+	display:inline-block;
+}
+
+.users-infos .movie-time {
+	font-size:25px;
+	color: white;
+	padding-right:1vh;
+	padding-left:1vh;
+}
+
+/* 
+ * ------------------------------------
+ *            	TIMELINE
+ * ------------------------------------
+ * 
+ */
+
+ .timeline {
+ 	width: 100%;
+ 	background: #fff;
+ 	height: 9rem;
+ }
+
+
+ /* 
+ * ------------------------------------
+ *       		CHAT
+ * ------------------------------------
+ * 
+ */
+
+ .messenger {
+    width: 80vw;
+ 	height:58vh;
+ }
+
+.titre_style{
+	text-align:center;
+	font-size:medium;
+	color:white;
+	padding: .6rem 0rem;
+    font-size: .8rem;
+	background-color:#2C2C2C;
+	font-weight:100;
+}
+#titre
+{
+	font-weight:400;
+	text-align:center;
+	font-size:medium;
+	color:white;
+	padding: .6rem 0rem;
+    font-size: .8rem;
+	background-color:#2C2C2C;
+}
+#titre span
+{
+font-weight: lighter;
+}
+ 
+#chat_aff
+{
+	width:100%;
+	height:100%;
+	background-color:white;
+	margin:auto;
+	border-color: #aaa;
+	overflow-y:scroll;
+}
+
+.messenger{
+	height: 50vh;
+}
+ 
+#form2
+{
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+}
+#name
+{
+	padding:4%;
+	width:100%;
+}
+ 
+#table_message
+{
+	width:100%;
+	font-size:small;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+
+ /* 
+ * ------------------------------------
+ *       	CINEPLEX LOGO
+ * ------------------------------------
+ * 
+ */
+
+ .logo {
+ 	width:100%;
+    height: 9.5vh;
+ 	background: white;
+ 	text-align: center;
+ 	border-bottom: 1px #cbcbcb solid;
+ }
+
+ .logo img {
+ 	width: 80%;
+ 	padding-top: 1vh;
+ }
+ /* 
+ * ------------------------------------
+ *       		USERS
+ * ------------------------------------
+ * 
+ */
+
+.film-info {
+	width: 100%;
+    height: 81vh;
+    display: inline-block;
+    text-align: left;
+}
+.film-info .poster{
+    text-align: center;
+    margin-top: 1em;
+}
+.film-info .poster img {
+	width: 65%;
+	margin: 0 0 0 30px;
+}
+
+.film-info h3.title {
+	margin: 9px 0 0 30px;
+}
+
+.film-info p.actors {
+	margin: 0 0 0 30px;
+	color: #B9B9B9;
+	font-size: .8rem;
+    padding-bottom: .7rem;
+}
+
+.film-info p.synopsis {
+	margin: 0 0 0 30px;
+	font-size: 0.8rem;
+}
+
+.user p {
+	display: inline-block;
+	padding-left: 1vw;
+	color: #8e8e8e;
+}
+
+ /* 
+ * ------------------------------------
+ *       		EXIT BUTTON
+ * ------------------------------------
+ * 
+ */
+
+ .exit {
+	position:absolute;
+	bottom:0px;
+	width: 100%;
+    height: 3.5rem;
+    bottom: 0;
+    background: #bb4646;
+    text-align: center;
+	transition: .3s all;
+ }
+ .exit:hover {
+	cursor:pointer;
+	background-color: #BD5B5B;
+ }
+ .exit:active {
+	cursor:pointer;
+	background-color: #bb4646;
+ }
+
+
+ .exit p {
+ 	text-transform: uppercase;
+ 	display:inline-block;
+ 	color: #d89595;
+  	padding-left: 1vw;
+	margin: 0px;
+	transform: translateY(-.3rem);
+ }
+
+
+
+
+ .exit img {
+ 	padding-top: 1rem;
+ }
+
+/* 
+ * ------------------------------------
+ *            SUBMIT
+ * ------------------------------------
+ * 
+ */
+
+#submit {
+	outline:none;
+	font-family: "Abrade",Arial,sans-serif;
+    font-size: 16px;
+	width:10%;
+	padding: 1.80%;
+    background-color: rgba(76, 175, 80, 0.72);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border: 0px solid green;
+	transition: .3s all;
+	transform: translateY(-1.1px);
+}
+
+#submit:hover 
+{
+	cursor:pointer;
+	background-color: rgba(76, 175, 80, 1);
+}
+#submit:active 
+{
+	cursor:pointer;
+	background-color: rgba(76, 200, 80, 1);
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+.users-infos .movie-time{
+color:orange;
+font-size:2.1rem;
+font-weight: 400;
+}
+body{
+width:100vw;
+}
+#titre {
+    font-size: 1.3rem;
+}
+.titre_style{
+    padding: 1.6rem 0rem;
+    font-size: 1.3rem;
+}
+table{
+width:100%;
+}
+.users-infos {
+	margin-top:0;
+	text-align:center;
+    padding-left: 4rem;
+}
+.users-infos p {
+	font-size:x-large;
+	font-weight:300;
+}
+.chat-infos{
+	height:8.5vh;
+}
+.room-infos{
+    text-align:center;
+}
+.room-infos p{
+    margin:0;
+	margin-top:2rem;
+}
+.users-infos{
+	color:white;
+}
+.room-infos .movie-state {
+display:none;
+}
+.room-infos .room-num {
+    font-size: 22px;
+}
+.room-infos .room-movie {
+    font-size: 23px;
+}
+.room-infos{
+width:100vw;
+}
+.left-part{
+float:none;
+width:100vw;
+}
+.right-part{
+    background: white;
+    overflow: hidden;
+    width: 100%;
+	height: 6vh;
+}
+.right-part .logo{
+display:none;
+}
+.right-part .film-info{
+display:none;
+}
+.exit {
+    height: 4.5rem;
+}
+.exit img {
+    padding-top: 1.5rem;
+}
+}

@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+ 
+# Add trailing slash
+ 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !.*/$
+RewriteRule ^(.*)$ Cineplex/$1/ [L,QSA,R=302]
+ 
+# Redirect to index.php
+ 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ Cineplex/index.php?q=$1 [L,QSA]

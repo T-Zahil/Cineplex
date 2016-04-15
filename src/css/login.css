@@ -1,0 +1,173 @@
+/*
+ * ========================================
+ *           	 L O G I N
+ * ========================================
+ */
+body {
+    font-family:Helvetica,Arial;
+    font-size:14px;
+    background:#F7F7F7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*
+==========MAIN MENU==========
+*/
+
+.form-title {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.form-title h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 300;
+}
+.form-title span {
+  font-size: 12px;
+}
+
+.form-title span a {
+  color: #2A3F54;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-module {
+  position: relative;
+  background: #ffffff;
+  max-width: 320px;
+  width: 100%;
+  border-top: 5px solid #2A3F54;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+.form-module .toggle {
+  cursor: pointer;
+  position: absolute;
+  bottom: -0;
+  right: -0;
+  width: 100%;
+  margin: -5px 0 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module .toggle .tooltip {
+  top: 5px;
+  display: block;
+  background: #2A3F54;
+  width: auto;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module .toggle .tooltip p{
+  color: #A93312;
+}
+
+.form-module .toggle .tooltip:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  display: block;
+}
+.form-module .form {
+  display: none;
+  padding: 40px;
+}
+.form-module .form:nth-child(2) {
+  display: block;
+}
+.form-module h2 {
+  margin: 0 0 20px;
+  color: #2A3F54;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+.form-module input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-weight: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module input:focus {
+  border: 1px solid #33b5e5;
+  color: #333333;
+}
+.form-module button {
+  cursor: pointer;
+  background: #2A3F54;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module button:hover {
+  background: #2B2F54;
+}
+.form-module .cta {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+}
+.form-module .cta a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.error-msg {
+  color: red;
+  text-align:center;
+  margin: 15px;
+}
+
+#gender {
+  display: inherit;
+  width: auto;
+}
+
+label {
+  margin-left: 40px;
+}
+
+#send {
+  margin-bottom: 25px;
+}
+
+.success {
+	width: 100%;
+	height: 5vh;
+	text-align: center;	
+}
+
+.success p {
+	background-color: green;
+    height: auto;
+}
+/*
+========== FIN MAIN MENU ==========
+*/
+

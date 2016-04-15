@@ -1,0 +1,257 @@
+body {
+  background-color: #000;
+  font-family: "Abrade",Arial,sans-serif;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.background {
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  display: block;
+}
+
+.background img {
+  display: block;
+  width: 2700px;
+  -webkit-transform: translateX(0rem);
+      -ms-transform: translateX(0rem);
+          transform: translateX(0rem);
+  -webkit-animation: slidePoster 90s linear 0s alternate running infinite forwards;
+          animation: slidePoster 90s linear 0s alternate running infinite forwards;
+}
+
+.left-part {
+  z-index: 2;
+  width: 69vw;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 45vh;
+  float: left;
+  height: 100vh;
+}
+
+.left-part h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
+
+.left-part h2 {
+  text-transform: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.right-part {
+  position: relative;
+  z-index: 2;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30vw;
+  height: 100vh;
+}
+
+.layoutBackground {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.layoutBackground .overlay {
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  opacity: .7;
+  width: 100vw;
+  height: 100vh;
+}
+
+input:hover {
+  cursor: text;
+}
+
+.logo {
+  background-color: white;
+  text-align: center;
+}
+
+.logo img {
+  width: 80%;
+}
+
+.info_div {
+  background-color: #2B2623;
+  padding: 1rem 0rem 1rem 1.5rem;
+  color: white;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+form {
+  text-align: right;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  border-bottom: 1px solid #B0B0B0;
+  line-height: 3;
+  transition: all .3s;
+  font-size: .9rem;
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+  height: 3rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  color: #F2A649;
+  border-bottom: 1px solid #F2A649;
+}
+
+input[type="submit"] {
+  right: 0;
+  background-color: #FFA73F;
+  padding: .75rem 2.5rem 2.25rem 2.5rem;
+  line-height: normal;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.lost-password {
+  width: 100%;
+  position: absolute;
+  line-height: 1.3;
+  bottom: 0px;
+  text-align: center;
+  font-size: .7rem;
+  padding: 1rem 0rem;
+}
+
+@-webkit-keyframes slidePoster {
+  0% {
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+  }
+  100% {
+    -webkit-transform: translateX(-25rem);
+            transform: translateX(-25rem);
+  }
+}
+
+@keyframes slidePoster {
+  0% {
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+  }
+  100% {
+    -webkit-transform: translateX(-25rem);
+            transform: translateX(-25rem);
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  body {
+    overflow: auto;
+    height: 10rem;
+  }
+  .info_div {
+    text-align: center;
+    padding-left: 0;
+  }
+  .clear {
+    display: none;
+  }
+  .layoutBackground .overlay {
+    height: 40vh;
+  }
+  .layoutBackground .background {
+    height: 40vh;
+  }
+  .layoutBackground .background img {
+    width: 1000px;
+  }
+  .left-part {
+    width: 100%;
+    padding-top: 15vh;
+    float: none;
+    height: 35vh;
+  }
+  .left-part h1 {
+    font-size: 1rem;
+  }
+  .left-part h2 {
+    font-size: 1rem;
+  }
+  .right-part {
+    width: 100%;
+    background-color: #fefefe;
+    float: none;
+    height: 40rem;
+  }
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+.status {
+  background-color: rgba(44, 203, 80, 0.3);
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.status h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .7rem;
+  color: #181818;
+  padding-bottom: .5rem;
+}
+
+.status p {
+  margin-left: 1rem;
+  padding: .2rem 0rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+}
+
+.errors {
+  background-color: rgba(212, 53, 38, 0.3);
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.errors h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .7rem;
+  color: #181818;
+  padding-bottom: .5rem;
+}
+
+.errors p {
+  margin-left: 1rem;
+  padding: .2rem 0rem;
+  color: rgba(255, 0, 0, 0.8);
+  font-weight: 400;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .right-part {
+    height: 47rem;
+  }
+}
